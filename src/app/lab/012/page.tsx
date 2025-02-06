@@ -3,7 +3,7 @@ import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 import { LabNavigator, LabTitleDesc, Footer } from "../comps/utils";
 import { SearchIcon } from "../comps/icons";
-import { StreamingText } from "./components/SearchingText";
+import { StreamingText } from "./components/StreamingText";
 import { SearchBar } from "./components/SearchBar";
 import { Row } from "./components/Row";
 import { measureText } from "../comps/measureText";
