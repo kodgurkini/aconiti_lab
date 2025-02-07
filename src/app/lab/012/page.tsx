@@ -124,17 +124,8 @@ export default function Lab12() {
             background: isOpen ? "#f8fafc" : "#FFF",
             borderRadius: "24px",
             boxShadow: "0 10px 16px -1px #00000030, 0 0 44px 64px #1073FF",
-            zIndex: "2",
-            position: "relative",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "start",
-            overflow: "hidden",
-            maxHeight: "312px",
-            minHeight: "312px",
-            gap: "16px",
-            flexDirection: "column",
           }}
+          className="z-2 relative flex items-center justify-start overflow-hidden h-[312px] gap-4 flex-col"
         >
           <AnimatePresence initial={false}>
             {isOpen || isSearching ? (
@@ -209,15 +200,9 @@ const SearchButton = ({
       onClick={() => setIsOpen(true)}
       style={{
         background: "#EDEFF2",
-        height: "34px",
-        width: "104px",
         borderRadius: "16px",
-        margin: "auto auto",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        cursor: "pointer",
       }}
+      className="h-[34px] w-[104px] m-auto flex items-center justify-center cursor-pointer"
     >
       <motion.div layoutId="searchIcon" layout="position">
         <SearchIcon
@@ -232,14 +217,7 @@ const SearchButton = ({
         exit={{ opacity: 0, x: -4 }}
         transition={{ duration: 0.3, delay: 0.08 }}
         layout="position"
-        style={{
-          fontSize: "14px",
-          lineHeight: "0px",
-          fontWeight: "500",
-          color: "#2D2E37",
-          margin: "auto auto auto 8px",
-          userSelect: "none",
-        }}
+        className="text-sm leading-[0px] font-medium text-[#2D2E37] m-auto ml-2 select-none"
       >
         Search
       </motion.p>
